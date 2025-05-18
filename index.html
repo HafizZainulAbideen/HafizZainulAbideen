@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <style>
+    .slider {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      animation: slide 9s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    @keyframes slide {
+
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+
+      33% {
+        transform: translateX(-100%);
+      }
+
+      66% {
+        transform: translateX(-200%);
+      }
+    }
+
+    body {
+      background: linear-gradient(45deg, #ffcccb, #ffebcd);
+    }
+
+    header {
+      background: url('https://source.unsplash.com/1600x900/?bakery') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+    }
+
+    .navbar {
+      background-color: #f6d7b0;
+      /* Warm peach shade */
+      color: #5c4033;
+    }
+
+
+
+
+    .carousel-item img {
+      height: 85vh;
+      /* Full-screen effect */
+      object-fit: cover;
+      filter: brightness(80%);
+    }
+
+    .carousel-caption {
+      position: absolute;
+      bottom: 20%;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+
+    .price-btn {
+      background: #ffcc00;
+      color: #333;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 12px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .price-btn:hover {
+      background: #e6b800;
+    }
+
+
+    .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            color: #e6b800;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 20px;
+            color: white;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ffcc00;
+        }
+
+
+
+
+  </style>
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+
+<body align="center">
+  <h1></h1>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+
+  <header class="header">
+    <h1>Welcome to Labbaik Bakery</h1>
+  </header>
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b><em>HOME</em></b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="varities.html"><em>varities</em></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html"><em>About us</em></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><em>Contact us</em></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+
+
+  <!--div align="center">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item ">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1713447395823-2e0b40b75a89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2FrZXN8ZW58MHx8MHx8fDA%3D"
+            class="img-fluid" alt="..." width="" height="">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1583338917451-face2751d8d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNha2VzfGVufDB8fDB8fHww"
+            class="img-fluid" alt="..." width="" height="">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGVzc2VydHxlbnwwfHwwfHx8MA%3D%3D"
+            class="img-fluid" alt="..." width="" height="">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div -->
+
+
+
+
+  <div id="bakeryCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FrZXN8ZW58MHx8MHx8fDA%3D"
+          class="d-block w-100" alt="Delicious Cake">
+        <div class="carousel-caption">
+          <h2>Freshly Baked Goodies</h2>
+          <p>Indulge in the sweetest delights.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/2019988723/photo/ragi-cookies-or-finger-millet-cookies-delight-in-wholesome-goodness-with-these-delectable.webp?a=1&b=1&s=612x612&w=0&k=20&c=OJLg40-enyiFdGPVh6UP0xFNQQZfv0pgUqYHb2XyBb0=
+" class="d-block w-100" alt="Tasty Pastries">
+        <div class="carousel-caption">
+          <h2>Premium Quality Ingredients</h2>
+          <p>Every bite, a taste of labbaik.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#bakeryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bakeryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div><br>
+<div align="center">
+  <h1>
+<span class="badge text-bg-warning">Our Best Seller</span></h1>
+</div><br><br>
+
+  <div align="center">
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y3VwJTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+        class="card-img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cup cake</h5>
+        <p class="card-text">
+
+        <div class="d-flex justify-content-between">
+          <button class="price-btn">
+            <i class="fas fa-dollar-sign"></i> $ 24
+          </button>
+          <a href="" class="btn btn-primary">BUY Now</a>
+        </div>
+
+        </p>
+
+      </div>
+    </div><br><br>
+
+
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzc2VydHxlbnwwfHwwfHx8MA%3D%3D"
+        class="card-img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Donut</h5>
+        <p class="card-text">
+
+        <div class="d-flex justify-content-between">
+          <button class="price-btn">
+            <i class="fas fa-dollar-sign"></i> $ 15
+          </button>
+          <a href="" class="btn btn-primary">BUY Now</a>
+        </div>
+
+        </p>
+
+      </div>
+    </div><br></br>
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://images.unsplash.com/photo-1622576890453-8e50b6f7d5b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByYWlzdGllcyUyMGNha2V8ZW58MHx8MHx8fDA%3D"
+        class="card-img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Birthday Cake</h5>
+        <p class="card-text">
+
+        <div class="d-flex justify-content-between">
+          <button class="price-btn">
+            <i class="fas fa-dollar-sign"></i> $ 29
+          </button>
+          <a href="" class="btn btn-primary">BUY Now</a>
+        </div>
+
+        </p>
+
+      </div>
+    </div>
+
+
+  </div><br><br>
+
+
+<footer class="footer">
+        <div class="container">
+            <p><strong>Labbaik Bakery</strong> - Freshly Baked Happiness 🍞🎂</p>
+<!-- FontAwesome Icons CDN -->
+<script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js"></script>
+
+<!-- Social Media Share Buttons -->
+<div class="text-center mt-4 social-icons">
+    <a href="https://www.facebook.com/share/1EFKyhkZLm/" class="btn btn-light" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/zain_ul_abideen_rizvi?igsh=MXR6bWozYjZybDhiag==" class="btn btn-light" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.threads.net/@zain_ul_abideen_rizvi" class="btn btn-light" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com/@pateljainulabedin?si=1DDR5MNFMt-7rJzx" class="btn btn-light" target="_blank"><i class="fab fa-youtube"></i></a>
+</div>
+
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+            <p>&copy; 2025 Labbaik Bakery. All Rights Reserved.</p>
+        </div>
+    </footer>
+<script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js"></script>
+
+
+</body>
+
+</html>
