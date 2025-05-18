@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+font:  sans-serif;
+background-color: rgb(0, 0, 0);
+padding: 50px;
+margin: 0;
+text-align: center;
+}
+button{
+padding: 30px;
+border: 1px solid;
+border-color: hwb(from color h w b);
+border-radius: 10px;
+cursor:zoom-out;
+background-color: black;
+color: chartreuse;
+}
+
+button:hover{
+background-color: rgb(43, 255, 1);
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+    
+<H1><b><em><i>CLICK<p>THE </p><P>BUTTON</P><P>AND</P>
+<P>CHANGE THE COLOR</P></i></em></b></P></H1>
+
+<p><button onclick="c()"><h1><b>Changing start now</b></h1></button></p>
+</body>
+<script>
+const colors = [
+"green","lime",
+"blue","gray",
+"red","yellow"
+];
+
+function c()
+{
+const randomIndex=(
+Math.floor(Math.random()*colors.length)
+);
+
+document.body.style.backgroundColor = colors[randomIndex];
+}
+</script>
+</html>
